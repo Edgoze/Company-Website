@@ -1,0 +1,249 @@
+
+/* Universal features */
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: moccasin;
+}
+
+/* Nav bar */
+
+nav {
+    padding: 15px;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightyellow;
+}
+
+#logo-container {
+    width: 390px;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightyellow;
+}
+
+nav img {
+    width: 75px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+
+#hyperlink-container {
+    margin-right: 10px;
+    background-color: lightyellow;
+}
+
+nav h4 {
+    display: inline-block;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+nav a {
+    text-decoration: none;
+    color: currentColor;
+    background-color: lightyellow;
+    padding: 25px;
+}
+
+nav a:hover {
+    background-color: bisque;
+}
+
+/* Mission */
+
+#mission-container {
+    height: 700px;
+    margin-top: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    background-image: url(./Images/library.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .6;
+}
+
+#mission-text-container {
+    width: 100%;
+    height: 240px;
+    border: 2px solid black;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 50px;
+}
+
+#mission-text-container h1 {
+    background-color: transparent;
+    font-size: 47px;
+    text-shadow: 1px 1px 2px red;
+}
+
+#mission-text-container h6 {
+    width: 1000px;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: red;
+    text-shadow: 3px 2px 2px black;
+}
+
+/* Products */
+
+#product-container {
+    margin-top: 15px;
+    opacity: .8;
+}
+
+#book-text-container {
+    height: 100px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    border: 4px solid black;
+    border-bottom: 0px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornsilk;
+}
+
+#book-text-container h1 {
+    font-size: 40px;
+    background-color: cornsilk;
+}
+
+#book-text-container h6 {
+    font-size: 20px;
+    background-color: cornsilk;
+}
+
+#book-container {
+    height: 350px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.book {
+    width: 25%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cornsilk;
+}
+
+.book img {
+    width: 90%;
+    height: 70%;
+}
+
+.book p {
+    background-color: cornsilk;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.book a {
+    background-color: cornsilk;
+    color: black;
+}
+
+/* Patrons */
+
+#people-container {
+    margin-top: 25px;
+}
+
+#patron-text-container {
+    height: 100px;
+    margin-right: 1%;
+    margin-left: 1%;
+    border: 4px solid black;
+    border-bottom: 0px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 50px;
+}
+
+#patron-text-container h1 {
+    font-size: 40px;
+    background-color: cornsilk;
+}
+
+#patron-text-container h6 {
+    font-size: 20px;
+    background-color: cornsilk;
+}
+
+#patrons-container {
+    height: 470px;
+    margin-right: 1%;
+    margin-left: 1%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.patron-container {
+    height: 99%;
+    width: 33.33333%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patron-container a {
+    border: 2px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornsilk;
+}
+
+.patron-container img {
+    width: 90%;
+    height: 90%;
+    border-radius: 100px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 15px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: chocolate;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer h5 {
+    text-align: left;
+    background-color: transparent;
+    font-size: 17px;
+}
