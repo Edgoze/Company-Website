@@ -59,6 +59,42 @@ nav a:hover {
     background-color: bisque;
 }
 
+@media only screen and (max-width: 830px) {
+
+    #logo-container {
+        justify-content: flex-start;
+        width: 280px;
+    }
+
+    #logo-container h4 {
+        margin-left: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    #logo-container {
+        width: auto;
+        margin-left: 1%;
+    }
+
+    nav img {
+        width: 50px;
+        height: 40px;
+        border-radius: 25%;
+    }
+
+    nav h4 {
+        font-size: 15px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+}
+
 /* Mission */
 
 #mission-container {
@@ -78,7 +114,8 @@ nav a:hover {
 #mission-text-container {
     width: 100%;
     height: 240px;
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -94,13 +131,21 @@ nav a:hover {
 }
 
 #mission-text-container h6 {
-    width: 1000px;
+    width: 75%;
     background-color: transparent;
     font-size: 30px;
     font-weight: 400;
     text-align: center;
     color: red;
     text-shadow: 3px 2px 2px black;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #mission-text-container {
+        height: auto;
+    }
+
 }
 
 /* Products */
@@ -111,10 +156,10 @@ nav a:hover {
 }
 
 #book-text-container {
-    height: 100px;
+    height: auto;
     margin-left: 7.5%;
     margin-right: 7.5%;
-    border: 4px solid black;
+    border: 2px solid black;
     border-bottom: 0px;
     line-height: 50px;
     display: flex;
@@ -137,14 +182,14 @@ nav a:hover {
     height: 350px;
     margin-left: 7.5%;
     margin-right: 7.5%;
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
 }
 
 .book {
     width: 25%;
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,23 +214,66 @@ nav a:hover {
     color: black;
 }
 
+@media only screen and (max-width: 830px) {
+
+    #book-container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #book-text-container {
+        justify-content: center;
+        text-align: center;
+        border: 1px solid black;
+        border-bottom: none;
+    }
+
+    #book-text-container h1 {
+        font-size: 30px;
+    }
+
+    #book-text-container h6 {
+        font-size: 18px;
+    }
+
+    .book {
+        border: none;
+        width: 50%;
+    }
+
+    .book p {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    #book-text-container {
+        line-height: 40px;
+    }
+
+}
+
 /* Patrons */
 
 #people-container {
     margin-top: 25px;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 #patron-text-container {
-    height: 100px;
-    margin-right: 1%;
-    margin-left: 1%;
-    border: 4px solid black;
+    height: auto;
+    border: 2px solid black;
     border-bottom: 0px;
     background-color: cornsilk;
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 50px;
+    text-align: center;
 }
 
 #patron-text-container h1 {
@@ -200,24 +288,22 @@ nav a:hover {
 
 #patrons-container {
     height: 470px;
-    margin-right: 1%;
-    margin-left: 1%;
     border: 2px solid black;
     display: flex;
     align-items: center;
 }
 
 .patron-container {
-    height: 99%;
+    height: 100%;
     width: 33.33333%;
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: cornsilk;
 }
 
 .patron-container a {
-    border: 2px solid black;
     height: 100%;
     display: flex;
     align-items: center;
@@ -231,11 +317,55 @@ nav a:hover {
     border-radius: 100px;
 }
 
+
+@media only screen and (max-width: 830px) {
+
+    #people-container {
+        margin-right: 11%;
+        margin-left: 11%;
+    }
+
+    #patron-text-container {
+        border: 1px solid black;
+    }
+
+    #patrons-container {
+        flex-wrap: wrap;
+        height: auto;
+        border: 1px solid black;
+        border-top: none;
+    }
+
+    .patron-container {
+        width: 100%;
+        height: 470px;
+        border: none;
+    }
+
+    .patron-container img {
+        width: 80%;
+        height: 90%;
+    }
+
+    #patron-text-container h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    #patron-text-container {
+        line-height: 40px;
+    }
+
+}
+
 /* Footer */
 
 footer {
     margin-top: 15px;
-    height: 100px;
+    height: 50px;
     border: 2px solid black;
     background-color: chocolate;
     display: flex;
@@ -246,4 +376,12 @@ footer h5 {
     text-align: left;
     background-color: transparent;
     font-size: 17px;
+}
+
+@media only screen and (max-width: 830px) {
+
+    footer {
+        border: 1px solid black;
+    }
+
 }
